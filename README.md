@@ -23,6 +23,8 @@ After the filtering process, the final dataset comprises **11,946 cases** of hig
 # Run the QC script
 Rscript QC.R
 
+
 ### Step 2: Extract FASTA Sequences
+```bash
 # Extract high-quality sequences using Python script
 python ./Scripts/extract_fasta.py https://hkuhk-my.sharepoint.com/:u:/g/personal/limt_hku_hk/EbWRGwXzKTZOgh8HUW2KXkUBmnDbIo4ygRQkpQqHoeiWbA?e=6AvCoG ./Data/filter.list extract.fasta
