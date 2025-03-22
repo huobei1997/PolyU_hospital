@@ -26,7 +26,7 @@ id <- union(
   df_lin_pangolearn[df_lin_pangolearn$qc_status %in% c("fail"), ] %>% .$taxon
 )
 
-meta<-readxl::read_xlsx("~/metadata_gisaid.xlsx")
+meta<-readxl::read_xlsx("~/Data/metadata_gisaid.xlsx")
 meta <- meta %>% 
   `rownames<-`(.$strain) %>% 
   .[setdiff(.$strain, id), , drop = FALSE]
@@ -38,7 +38,7 @@ meta.polyu<-tidyr::separate(meta.polyu,FASTA,into=c("id","other"),sep="/")
 matches <- grepl(paste(meta.polyu$id, collapse="|"), meta$strain)
 meta_filtered <- meta[!matches, ]
 
-write_xlsx(meta_filtered,"~/metadata_filtered.xlsx")
+write_xlsx(meta_filtered,"~/Data/metadata_filtered.xlsx")
 
 
 
