@@ -19,7 +19,7 @@ After the filtering process, the final dataset comprises **11,946 cases** of hig
 ## Steps to Process Data
 
 ```bash
-### Step 1: Run Quality Control Script
+Step 1: Run Quality Control Script
 # Run the QC script
 Rscript QC.R
 
