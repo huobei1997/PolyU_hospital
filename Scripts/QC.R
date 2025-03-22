@@ -2,7 +2,7 @@
 #########################step1: pangolin########################################
 setwd("~/pangolin")
 system("conda run -n pangolin pangolin --update")
-file_current_fasta<-"./gisaid.fasta"
+file_current_fasta<-"https://hkuhk-my.sharepoint.com/:u:/r/personal/limt_hku_hk/Documents/Update_GISAID/gisaid.fasta?csf=1&web=1&e=B1HRZA"
 system(paste0("conda run -n pangolin pangolin ", file_current_fasta))
 
 #########################step2: nextclade#######################################
