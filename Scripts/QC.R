@@ -1,4 +1,3 @@
-
 #########################step1: pangolin########################################
 setwd("~/pangolin")
 system("conda run -n pangolin pangolin --update")
