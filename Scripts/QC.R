@@ -8,7 +8,7 @@ system(paste0("conda run -n pangolin pangolin ", file_current_fasta))
 #########################step2: nextclade#######################################
 setwd("~/nextclade")
 file_current_fasta <-"https://hkuhk-my.sharepoint.com/:u:/r/personal/limt_hku_hk/Documents/Update_GISAID/gisaid.fasta?csf=1&web=1&e=B1HRZA"
-system(paste0("./run_nextclade.sh ", file_current_fasta, " ./"))
+system(paste0("./Scripts/run_nextclade.sh ", file_current_fasta, " ./"))
 
 #########################step3: filter##########################################
 ###1.filter bad quality samples
