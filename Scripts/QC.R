@@ -32,7 +32,7 @@ meta <- meta %>%
   .[setdiff(.$strain, id), , drop = FALSE]
 
 ###2.filter PolyU samples
-meta.polyu<-readxl::read_xlsx("~/metadata_PolyU.xlsx")
+meta.polyu<-readxl::read_xlsx("~/Data/metadata_PolyU.xlsx")
 meta.polyu<-tidyr::separate(meta.polyu,FASTA,into=c("id","other"),sep="/")
 
 matches <- grepl(paste(meta.polyu$id, collapse="|"), meta$strain)
