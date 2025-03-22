@@ -1,4 +1,4 @@
-#/Users/limengting/miniconda3/envs/python/bin/python extract_fasta.py multi.fasta extract.list extract.fasta
+#python extract_fasta.py multi.fasta extract.list extract.fasta
 
 import sys
 
